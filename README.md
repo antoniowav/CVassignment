@@ -1,4 +1,7 @@
 # CVassignment
+
+Link to GitHub repo: https://github.com/antoniowav/CVassignment
+
 Assignment for Medieistitutet course
 
 Requirements:
