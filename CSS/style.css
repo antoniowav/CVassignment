@@ -60,12 +60,13 @@ li{
 
 
 .container{
-    padding: 50px 0;
+    padding: 50px;
+    
+    
 }
 
 .row{
-    width: 100%;
-    max-width: 800px;
+    
     margin: 0 auto;
     padding: 0 12px;
 }
@@ -73,6 +74,8 @@ li{
 .text-blue{
     color: #173077;
 }
+
+/* The following code i have looked to a tutorial, but i have changed it to fit my final result */
 
 .text-gradient{
    
@@ -192,12 +195,13 @@ nav{
 
 
 
-/*About me - Profile picture, Title/Subtitle, Links, SVG design*/
+/* Profile picture, Title/Subtitle, Links, SVG design*/
 
 #about-me-main-section{
     min-height: 100vh;
     display: flex;
     flex-direction: column;
+   
 }
 
 .about-me-home {
@@ -212,7 +216,6 @@ nav{
         display: flex;
         flex-direction: column;
         align-items: center;
-        max-width: 600px;
         margin: 0 auto;
         text-align: center;
 
@@ -367,6 +370,8 @@ nav{
         
       /* Skills - Title, List and Icons*/
 
+     
+
       .skill-icon{
           width: 100%;
           max-width: 100px;
@@ -431,15 +436,36 @@ nav{
           }
       }
 
-      @media screen and (max-width: 415px) {
+      @media screen and (max-width: 516px) {
         .skill-name{
-            font-size: 9px;
+            font-size: 11px;
+        }
+
+        .skill-icon{
+            padding-bottom: 10px;
+    }
+}
+
+
+      @media screen and (max-width: 515px) {
+        .skill-name{
+            font-size: 10px;
         }
 
         .skill-icon{
             padding-bottom: 10px;
     }
 
+}
+
+@media screen and (max-width: 352px) {
+    .skill-name{
+        font-size: 9px;
+    }
+
+    .skill-icon{
+        padding-bottom: 10px;
+}
 }
 
     @media screen and (max-width: 280px) {
@@ -456,8 +482,16 @@ nav{
 
       /*Experiences*/
 
+      #experiences{
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+      }
+
       .experience{
           margin-bottom: 120px;
+          
 
       }
 
@@ -472,8 +506,11 @@ nav{
       }
 
       .experience-container{
+          
           display: flex;
+          max-width: 800px;
           justify-content: center;
+          align-items: center;
           box-shadow: 0 20px 80px rgba(0, 0, 0, 0.45);
           border-radius: 1000px;
           overflow: hidden;
@@ -699,6 +736,63 @@ nav{
 
          #back-home{
              padding-bottom: 40px
+         }
+
+         .photos{
+             display: flex;
+             justify-content: space-around;
+             flex-direction: column;
+             margin-top: 20px;
+             
+
+            }
+
+         .photos-container{
+             
+             overflow: hidden;
+             padding-bottom: 40px;
+             margin-top: 20px;
+             border-radius: 10px;
+             max-width: 800px;
+         }
+
+         .photos-container figure {
+             position: relative;
+             width: 500%;
+             margin: 0;
+             left: 0;
+             animation: 10s slider infinite;    
+              
+         }
+
+         .single-photo{
+             border-radius: 10px;
+         }
+
+         .photos-container figure img{
+             float: left;
+             width: 20%;
+         }
+
+         @keyframes slider{
+             0% {
+                 left: 0%;
+             }
+             20% {
+                 left: 0%;
+            }
+            25% {
+                left: -100%;
+            }
+            45% {
+                left: -100%;
+            }
+            50% {
+                left: -200%;
+            }
+            70% {
+                left: -200%;
+            }
          }
 
         
