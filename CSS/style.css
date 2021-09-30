@@ -459,6 +459,12 @@ nav{
         .skill-icon{
             padding-bottom: 10px;
     }
+}
+
+    @media screen and (max-width: 400px) {
+        .skill-name{
+            font-weight: bold;
+        }
 
 }
 
